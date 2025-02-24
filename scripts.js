@@ -1,7 +1,7 @@
 var products = [
     {
         "photo": "img/big-mac.png",
-        "name": "Big Mac",
+        "name": "Big Mac Didio",
         "price": 5.99,
         "active": false,
         "quantity": 1
@@ -64,3 +64,16 @@ var products = [
     }
 ];
  
+
+
+const SelfServiceMachine = {
+    data(){
+        return {
+            products: window.products,
+        }
+    }
+};
+
+/* Inicializar a aplicação no Vue3 */
+Vue.createApp(SelfServiceMachine).mount('#app');
+
